@@ -318,41 +318,25 @@ section {
 }
 
 .hero {
-  padding: 56px 0 0;
+  padding: 25px 0 0;
   text-align: center;
   border-top: none !important;
 }
 
-.hero__eyebrow {
-  margin-bottom: 18px;
+.hero__brand-mark {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
-}
-
-.hero__eyebrow .dot {
-  width: 4px;
-  height: 4px;
-  background: var(--purple-soft);
-  border-radius: 50%;
-  opacity: 0.6;
-}
-
-.hero__eyebrow .eyebrow {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2px;
-  max-width: 290px;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1.35;
+  margin-bottom: 14px;
 }
 
-.hero__eyebrow .eyebrow-line {
-  display: block;
-  white-space: nowrap;
+.hero__brand-mark img {
+  width: clamp(88px, 18vw, 126px);
+  height: auto;
+  opacity: 1;
+  filter: drop-shadow(0 10px 24px rgba(94,23,235,0.16));
+  pointer-events: none;
+  user-select: none;
 }
 
 .hero__headline {
@@ -957,25 +941,19 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
 
   body { font-size: 17px; }
   section { padding: 82px 0; }
-  .hero { padding-top: 70px; }
+  .hero { padding-top: 31px; }
   .hero__cta { max-width: 360px; padding-bottom: 52px; }
   .hero__sub { font-size: 17px; max-width: 600px; }
   .body-p { font-size: 16px; }
   .section-sub { font-size: 16px; }
   .callout { font-size: 16px; }
 
-  .hero__eyebrow .eyebrow {
-    display: inline-block;
-    max-width: none;
+  .hero__brand-mark {
+    margin-bottom: 18px;
   }
 
-  .hero__eyebrow .eyebrow-line {
-    display: inline;
-    white-space: normal;
-  }
-
-  .hero__eyebrow .eyebrow-line + .eyebrow-line::before {
-    content: " | ";
+  .hero__brand-mark img {
+    width: clamp(96px, 11vw, 132px);
   }
 
   .hero__headline {
@@ -1028,11 +1006,8 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
 <section class="hero section-first section-dark" id="top">
   <div class="wrap">
     <div class="hero__inner">
-      <div class="hero__eyebrow reveal">
-        <span class="eyebrow">
-          <span class="eyebrow-line">HARD MODE LIFESTYLE</span>
-          <span class="eyebrow-line">PROTOCOLO DE FORÇA PRÁTICA</span>
-        </span>
+      <div class="hero__brand-mark reveal" aria-hidden="true">
+        <img src="./assets/img/logo-hard-mode.png" alt="Hard Mode Lifestyle">
       </div>
 
       <h1 class="display hero__headline reveal">
