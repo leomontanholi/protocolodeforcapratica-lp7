@@ -1000,8 +1000,26 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
   .section-title { font-size: clamp(34px, 4vw, 50px); }
 }
 </style>
+    <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1587272927987010');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1587272927987010&ev=PageView&noscript=1"/>
+  </noscript>
 
 <section class="hero section-first section-dark" id="top">
   <div class="wrap">
@@ -1041,7 +1059,7 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
       </div>
 
       <div class="hero__cta reveal">
-        <a href="#oferta" class="btn btn--primary js-scroll">Quero o Protocolo Agora — R$67</a>
+        <a href="#oferta" class="btn btn--primary js-scroll">Quero o Protocolo Agora</a>
         <p class="cta-note">Acesso imediato · Garantia de 7 dias</p>
       </div>
     </div>
