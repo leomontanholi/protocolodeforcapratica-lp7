@@ -159,6 +159,14 @@ section {
   text-align: center;
 }
 
+.eyebrow--lg {
+  font-size: 13px;
+}
+
+.section-sub--spaced {
+  margin-top: 8px;
+}
+
 .divider {
   width: 32px;
   height: 2px;
@@ -171,8 +179,8 @@ section {
   font-size: clamp(28px, 7.2vw, 46px);
   text-wrap: balance;
 }
-.section-sub   { font-size: 15px; color: var(--muted); margin-bottom: 30px; max-width: 540px; line-height: 1.65; }
-.body-p        { font-size: 15px; color: var(--muted); margin-bottom: 14px; }
+.section-sub   { font-size: 16px; color: var(--muted); margin-bottom: 30px; max-width: 540px; line-height: 1.65; }
+.body-p        { font-size: 16px; color: var(--muted); margin-bottom: 14px; }
 .body-p:last-child { margin-bottom: 0; }
 .body-p strong { color: var(--white); font-weight: 600; }
 
@@ -303,6 +311,58 @@ section {
   color: var(--text-dark);
 }
 
+.btn--stacked {
+  flex-direction: column;
+  gap: 3px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.1;
+  padding: 10px 24px;
+}
+
+.btn__line-main,
+.btn__line-sub {
+  display: block;
+}
+
+.btn__line-main {
+  font-size: 16px;
+}
+
+.btn__line-sub {
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  opacity: 0.92;
+}
+
+.btn__old-price {
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: currentColor;
+  opacity: 0.78;
+}
+
+.price-anchor {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dim-dark);
+  margin-bottom: 8px;
+}
+
+.price-anchor span {
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: currentColor;
+}
+
+.section-dark .price-anchor,
+.section-soft-dark .price-anchor {
+  color: var(--dim);
+}
+
 .cta-note {
   text-align: center;
   font-size: 12px;
@@ -371,7 +431,7 @@ section {
 }
 
 .hero__sub {
-  font-size: clamp(15px, 2vw, 17px);
+  font-size: clamp(16px, 2.15vw, 18px);
   color: var(--muted);
   max-width: 34ch;
   margin: 20px auto 26px;
@@ -470,7 +530,7 @@ section {
   background: rgba(94,23,235,0.05);
   border-radius: 0 var(--r) var(--r) 0;
   margin: 22px 0;
-  font-size: 15px;
+  font-size: 16px;
   font-style: italic;
   color: var(--white);
   line-height: 1.65;
@@ -507,7 +567,7 @@ section {
 .mini-offer__top {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -524,7 +584,7 @@ section {
 }
 
 .mini-offer__desc {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
   max-width: 46ch;
   margin: 0 auto 18px;
@@ -536,7 +596,7 @@ section {
 }
 
 .mini-offer__installments {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--dim-dark);
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -546,24 +606,24 @@ section {
 .mini-offer__price {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 900;
-  font-size: clamp(46px, 13vw, 58px);
+  font-size: clamp(48px, 13.8vw, 60px);
   color: var(--text-dark);
   line-height: 1;
 }
 
 .mini-offer__price-cur {
-  font-size: clamp(22px, 5.8vw, 26px);
+  font-size: clamp(24px, 6.2vw, 28px);
   vertical-align: top;
   margin-top: 8px;
   display: inline-block;
 }
 
 .mini-offer__price-dec {
-  font-size: clamp(30px, 8vw, 38px);
+  font-size: clamp(32px, 8.6vw, 40px);
 }
 
 .mini-offer__or {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--dim-dark);
   margin: 6px 0 5px;
 }
@@ -571,7 +631,7 @@ section {
 .mini-offer__cash {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 19px;
   color: var(--muted-dark);
 }
 
@@ -594,7 +654,7 @@ section {
   max-width: 560px;
   margin: 18px auto 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
   color: var(--muted-dark);
 }
@@ -649,7 +709,7 @@ section {
 }
 
 .story-quote p {
-  font-size: 15px;
+  font-size: 18px;
   font-style: italic;
   color: var(--white);
   line-height: 1.65;
@@ -659,7 +719,7 @@ section {
 .story-quote .attr {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--purple-soft);
@@ -727,7 +787,7 @@ section {
 .testimonial__text,
 .guarantee__text,
 .faq-a {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--muted);
   line-height: 1.6;
 }
@@ -745,7 +805,7 @@ section {
 .aula__n {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 900;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.14em;
   color: var(--purple-soft);
   padding: 18px 0 18px 2px;
@@ -761,7 +821,7 @@ section {
 
 .aula__title {
   font-weight: 800;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--white);
@@ -771,7 +831,7 @@ section {
 .section-light .aula__title { color: var(--text-dark); }
 
 .aula__desc {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
   line-height: 1.55;
 }
@@ -786,7 +846,7 @@ section {
 .bonus-card__lbl {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--purple-soft);
@@ -795,18 +855,22 @@ section {
 
 .bonus-card__title {
   font-weight: 800;
-  font-size: 17px;
+  font-size: 19px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--white);
   margin-bottom: 8px;
 }
 
+.bonus-card__desc {
+  font-size: 17px;
+}
+
 .bonus-card__val {
   margin-top: 12px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 17px;
   color: var(--dim);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -867,7 +931,7 @@ section {
 }
 
 .offer-card__includes {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--dim);
   margin-bottom: 24px;
 }
@@ -885,7 +949,7 @@ section {
   gap: 8px;
   padding: 9px 0;
   border-bottom: 1px solid var(--border);
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
 }
 
@@ -893,7 +957,7 @@ section {
 
 .offer-stack li span:last-child {
   color: inherit;
-  font-size: 12px;
+  font-size: 13px;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -901,7 +965,7 @@ section {
 .offer-stack__total {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
   color: var(--white) !important;
 }
@@ -916,7 +980,7 @@ section {
 .offer-price-block { margin: 20px 0; }
 
 .offer-installments {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--dim);
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -926,25 +990,25 @@ section {
 .offer-price {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 900;
-  font-size: 64px;
+  font-size: 68px;
   color: var(--white);
   line-height: 1;
 }
 
 .offer-price__cur {
-  font-size: 28px;
+  font-size: 30px;
   vertical-align: top;
   margin-top: 10px;
   display: inline-block;
 }
 
-.offer-price__dec { font-size: 42px; }
-.offer-or { font-size: 12px; color: var(--dim); margin: 7px 0; }
+.offer-price__dec { font-size: 44px; }
+.offer-or { font-size: 14px; color: var(--dim); margin: 7px 0; }
 
 .offer-cash {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--muted);
 }
 
@@ -1012,7 +1076,7 @@ section {
 .forwho-col__title {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-bottom: 14px;
@@ -1028,7 +1092,7 @@ section {
   position: relative;
   padding: 9px 0 9px 18px;
   border-bottom: 1px solid var(--border);
-  font-size: 14px;
+  font-size: 15px;
   color: var(--muted);
   line-height: 1.5;
 }
@@ -1100,7 +1164,7 @@ section {
 }
 
 .close__sub {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--muted);
   line-height: 1.65;
   margin-bottom: 34px;
@@ -1118,7 +1182,7 @@ section {
   margin-top: 22px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--dim);
@@ -1129,12 +1193,12 @@ footer {
   background: #09090f;
   border-top: 1px solid var(--border);
   text-align: center;
-  font-size: 12px;
-  color: var(--dim);
+  font-size: 14px;
+  color: #ffffff;
   line-height: 1.8;
 }
 
-footer a { color: var(--dim); text-underline-offset: 3px; }
+footer a { color: #ffffff; text-underline-offset: 3px; }
 
 .reveal {
   opacity: 1;
@@ -1148,10 +1212,10 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
   section { padding: 82px 0; }
   .hero { padding-top: 31px; }
   .hero__cta { max-width: 360px; padding-bottom: 52px; }
-  .hero__sub { font-size: 17px; max-width: 600px; }
-  .body-p { font-size: 16px; }
-  .section-sub { font-size: 16px; }
-  .callout { font-size: 16px; }
+  .hero__sub { font-size: 18px; max-width: 600px; }
+  .body-p { font-size: 17px; }
+  .section-sub { font-size: 17px; }
+  .callout { font-size: 17px; }
 
   .hero__brand-mark {
     margin-bottom: 18px;
@@ -1203,6 +1267,21 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
     width: 100%;
   }
 }
+@media (min-width: 640px) {
+  .btn--stacked {
+    gap: 4px;
+    padding: 11px 28px;
+  }
+
+  .btn--stacked .btn__line-main {
+    font-size: 17px;
+  }
+
+  .btn--stacked .btn__line-sub {
+    font-size: 16px;
+  }
+}
+
 
 @media (min-width: 860px) {
   :root { --pad: 48px; }
@@ -1273,7 +1352,10 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
       </div>
 
       <div class="hero__cta reveal">
-        <a href="https://pay.hotmart.com/Y103675280S?checkoutMode=10" class="btn btn--primary" id="btn-hero-checkout">Quero o Protocolo Agora</a>
+        <a href="https://pay.hotmart.com/Y103675280S?checkoutMode=10" class="btn btn--primary btn--stacked" id="btn-hero-checkout">
+          <span class="btn__line-main">QUERO O PROTOCOLO AGORA</span>
+          <span class="btn__line-sub">DE <span class="btn__old-price">R$147</span> POR R$67</span>
+        </a>
         <p class="cta-note">Acesso imediato · Garantia de 7 dias</p>
       </div>
     </div>
@@ -1287,6 +1369,7 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
       <h3 class="mini-offer__title">Protocolo de Força Prática</h3>
       <p class="mini-offer__desc">10 aulas + 4 bônus exclusivos para colocar sua vida em ordem com direção, estrutura e ação prática desde os primeiros dias.</p>
       <div class="mini-offer__price-wrap">
+        <p class="price-anchor">De <span>R$147</span> por</p>
         <p class="mini-offer__installments">9x de</p>
         <div class="mini-offer__price"><span class="mini-offer__price-cur">R$</span>8<span class="mini-offer__price-dec">,80</span></div>
         <p class="mini-offer__or">ou</p>
@@ -1304,7 +1387,7 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
   <div class="wrap">
     <div class="story-layout">
       <div class="reveal">
-        <p class="eyebrow">Quem fala isso</p>
+        <p class="eyebrow eyebrow--lg">Quem fala isso</p>
         <div class="divider"></div>
         <h2 class="display section-title">Eu conheci esse ciclo por dentro.</h2>
 
@@ -1336,10 +1419,10 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
 <section class="section-light">
   <div class="wrap">
     <div class="reveal">
-      <p class="eyebrow">A fundação</p>
+      <p class="eyebrow eyebrow--lg">A fundação</p>
       <div class="divider"></div>
       <h2 class="display section-title">Três pilares. Uma arquitetura.</h2>
-      <p class="section-sub">
+      <p class="section-sub section-sub--spaced">
         O PFP trabalha os três simultaneamente — porque um homem com corpo mas sem direção ainda está perdido.
       </p>
     </div>
@@ -1366,7 +1449,7 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
 <section class="section-soft-dark">
   <div class="wrap">
     <div class="reveal">
-      <p class="eyebrow">O que você vai construir</p>
+      <p class="eyebrow eyebrow--lg">O que você vai construir</p>
       <div class="divider"></div>
       <h2 class="display section-title">10 aulas. Uma fundação.</h2>
       <p class="section-sub">Cada aula entrega base concreta — não motivação passageira.</p>
@@ -1390,7 +1473,7 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
 <section class="section-light">
   <div class="wrap">
     <div class="reveal">
-      <p class="eyebrow">Incluído no protocolo</p>
+      <p class="eyebrow eyebrow--lg">Incluído no protocolo</p>
       <div class="divider"></div>
       <h2 class="display section-title">Mais quatro ferramentas.</h2>
     </div>
@@ -1426,7 +1509,7 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
 <section class="section-dark" id="oferta">
   <div class="wrap">
     <div class="reveal" style="text-align:center;">
-      <p class="eyebrow">Sua decisão</p>
+      <p class="eyebrow eyebrow--lg">Sua decisão</p>
       <div class="divider" style="margin:14px auto 0;"></div>
     </div>
 
@@ -1436,15 +1519,16 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
         <p class="offer-card__includes">10 aulas + 4 bônus · Acesso imediato</p>
 
         <ul class="offer-stack">
-          <li><span>Protocolo de Força Prática (10 aulas)</span><span>R$297</span></li>
+          <li><span>Protocolo de Força Prática (10 aulas)</span><span>R$147</span></li>
           <li><span>Guia de Treino em Casa</span><span>R$37</span></li>
           <li><span>Diário do Homem de Base</span><span>R$27</span></li>
           <li><span>Biblioteca Hard Mode</span><span>R$17</span></li>
           <li><span>Checklist de Auditoria Semanal</span><span>R$17</span></li>
-          <li class="offer-stack__total"><span>Total</span><span>R$395</span></li>
+          <li class="offer-stack__total"><span>Total</span><span>R$245</span></li>
         </ul>
 
         <div class="offer-price-block">
+          <p class="price-anchor">De <span>R$147</span> por</p>
           <p class="offer-installments">9x de</p>
           <div class="offer-price"><span class="offer-price__cur">R$</span>8<span class="offer-price__dec">,80</span></div>
           <p class="offer-or">ou</p>
@@ -1476,7 +1560,7 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
 <section class="section-light">
   <div class="wrap">
     <div class="reveal">
-      <p class="eyebrow">Antes de entrar</p>
+      <p class="eyebrow eyebrow--lg">Antes de entrar</p>
       <div class="divider"></div>
       <h2 class="display section-title">Para quem é este protocolo.</h2>
     </div>
@@ -1505,7 +1589,7 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
 <section class="section-soft-dark">
   <div class="wrap">
     <div class="reveal">
-      <p class="eyebrow">Dúvidas frequentes</p>
+      <p class="eyebrow eyebrow--lg">Dúvidas frequentes</p>
       <div class="divider"></div>
       <h2 class="display section-title">Perguntas diretas.</h2>
     </div>
@@ -1547,8 +1631,10 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
       do que você <em>tentou</em> ser.
     </h2>
     <p class="close__sub reveal">
-      Vão lembrar do homem que você foi para as pessoas que dependiam de você.
-      A construção começa com uma decisão — e essa decisão é agora.
+      Vão lembrar do homem que você foi<br>
+      para as pessoas que dependiam de você.<br>
+      A construção começa com uma decisão —<br>
+      <strong>e essa decisão é agora.</strong>
     </p>
     <div class="close__cta reveal">
       <a href="https://pay.hotmart.com/Y103675280S?checkoutMode=10" class="btn btn--ghost">QUERO O PROTOCOLO POR R$67</a>
@@ -1558,7 +1644,7 @@ footer a { color: var(--dim); text-underline-offset: 3px; }
 </section>
 
 <footer>
-  <p>© 2025 Hard Mode Inc. · <a href="#">Privacidade</a> · <a href="#">Termos</a> · <a href="#">Suporte</a></p>
+  <p>© 2026 Hard Mode Inc. · <a href="#">Privacidade</a> · <a href="#">Termos</a> · <a href="#">Suporte</a></p>
   <p style="margin-top:4px;">Resultados individuais podem variar.</p>
 </footer>
 
