@@ -8,8 +8,6 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://i.ytimg.com" crossorigin>
-<link rel="preconnect" href="https://www.youtube.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
 <style>
@@ -459,56 +457,6 @@ section {
   background: rgba(0,0,0,0.35);
   box-shadow: var(--shadow-md);
 }
-
-.video-poster {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  border: none;
-  padding: 0;
-  background: #09090f;
-  cursor: pointer;
-}
-
-.video-poster img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.video-poster::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(6,6,12,0.08), rgba(6,6,12,0.24));
-}
-
-.video-poster__play {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  transform: translate(-50%, -50%);
-  width: 76px;
-  height: 76px;
-  border-radius: 50%;
-  background: rgba(6,6,12,0.74);
-  border: 1px solid rgba(255,255,255,0.12);
-  display: grid;
-  place-items: center;
-  z-index: 2;
-  box-shadow: 0 16px 36px rgba(0,0,0,0.22);
-}
-
-.video-poster__play::before {
-  content: '';
-  margin-left: 4px;
-  width: 0;
-  height: 0;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-left: 20px solid var(--white);
-}
-
 
 .hero__video-glass iframe {
   position: absolute;
@@ -1335,19 +1283,13 @@ footer a { color: #ffffff; text-underline-offset: 3px; }
 
       <div class="hero__video-section reveal">
         <div class="hero__video-glass" id="video-container">
-          <button
-            type="button"
-            class="video-poster"
-            id="video-poster"
-            aria-label="Reproduzir vídeo do Protocolo de Força Prática"
-            data-embed="https://www.youtube.com/embed/2RSMdLowagc?autoplay=1&controls=0&rel=0">
-            <img
-              src="https://i.ytimg.com/vi/2RSMdLowagc/maxresdefault.jpg"
-              alt="Vídeo do Protocolo de Força Prática"
-              loading="eager"
-              fetchpriority="high">
-            <span class="video-poster__play" aria-hidden="true"></span>
-          </button>
+          <iframe
+            src="https://player.mediadelivery.net/play/636159/7207a3bc-40a9-42f3-86de-cddacef400b7"
+            title="Protocolo de Força Prática"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
 
@@ -1647,31 +1589,6 @@ footer a { color: #ffffff; text-underline-offset: 3px; }
   <p>© 2026 Hard Mode Inc. · <a href="#">Privacidade</a> · <a href="#">Termos</a> · <a href="#">Suporte</a></p>
   <p style="margin-top:4px;">Resultados individuais podem variar.</p>
 </footer>
-
-<script>
-(function () {
-  var poster = document.getElementById('video-poster');
-  var container = document.getElementById('video-container');
-
-  if (!poster || !container) return;
-
-  poster.addEventListener('click', function () {
-    var src = poster.getAttribute('data-embed');
-    if (!src) return;
-
-    var iframe = document.createElement('iframe');
-    iframe.src = src;
-    iframe.title = 'Protocolo de Força Prática';
-    iframe.loading = 'eager';
-    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-    iframe.allowFullscreen = true;
-
-    container.innerHTML = '';
-    container.appendChild(iframe);
-  }, { once: true });
-})();
-</script>
 
 </body>
 </html>
